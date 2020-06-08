@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(185, 236, 230)  ;
+    
+
+}
+
+h2 {
+    text-align: center;
+    font: weight 400;
+    font-style: italic;
+    font-family: cursive;
+    color: red;
+    font-size: xx-large;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+  
+.centre {
+    text-align: center;
+    border-style: double;
+    background-color:lemonchiffon;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 5px;
+    height: 400px
+    }
+  
+#result {
+    font-style: italic;
+}
+
+.navbar {
+    height: 30px;
+}
+
+.top {
+    align-items: center;
+}
+
+#textdisplay {
+    height: 150px;
+}
+
+li {
+    margin: 10px;
+}
+/* .navbar-collapse {
+text-align: right;
+} */
