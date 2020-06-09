@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="Stylesheet" href="./Assets/style.css">
+    <link rel="Stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -23,7 +23,7 @@
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" >Your Score</a>
+                    <a class="nav-link active" >Time Left</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="yourscore" href="highscore.html">0</a>
@@ -31,7 +31,9 @@
             </ul>
         </div>
     </nav>
-
+<div class="container scoreoutput">
+    <div class="row">
+    <div class="col-lg-12">
 <h2>The Great Javascript Quiz</h2>
 <section class="centre">
     <button type="button" class="btn btn-primary btn-sm" id= "beginning">Start Quiz</button>
@@ -40,8 +42,30 @@
     <h5 id="textdisplay"> </h5>
     <br>
     <div id="buttonshere"></div>
-    </section>
-<script src="./Assets/script.js"></script>
+</div>
+</div>
+</section>
+<br>
+
+    <div class="row yourhighscores">
+      <div class="col-lg-4">
+    <h3> Initials</h3>
+    <div id="yourinitials"></div>
+        </div>
+      <div class="col-lg-4 youranswered">
+      <h3> Questions Answered</h3>
+      <div id="youranswered"></div>
+        </div>
+      <div class="col-lg-4 yourresults">
+      <h3> Score</h3>
+      <div id="yourresults"></div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>

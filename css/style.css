@@ -13,18 +13,18 @@ h2 {
     font-size: xx-large;
 }
 
-.container {
+/* .container {
     height: 200px;
     position: relative;
     border: 3px solid green;
-}
+} */
   
 .centre {
     text-align: center;
     border-style: double;
     background-color:lemonchiffon;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 75px;
+    margin-right: 75px;
     border-radius: 20px;
     border-color: black;
     border-width: 5px;
@@ -53,3 +53,16 @@ li {
 /* .navbar-collapse {
 text-align: right;
 } */
+
+.yourhighscores {
+    align-content: center;
+    color: rgb(32, 3, 3);
+}
+
+h3 {
+    text-align: center;
+}
+
+.yourhighscores {
+    text-align: center;
+}
