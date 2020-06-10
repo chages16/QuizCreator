@@ -90,28 +90,11 @@ beginningbutton.addEventListener("click", function(event) {
         ioutput.push(initials);
         qoutput.push(round);
         soutput.push(totalscore);
-        console.log(initials);
-        console.log(ioutput)
-        localStorage.setItem("initials", JSON.stringify(initials));
-        localStorage.setItem("answered", JSON.stringify(round));
-        localStorage.setItem("totalscore", JSON.stringify(totalscore));
-        for (var i = 0; i < ioutput.length; i++) {
-          var li1 = document.createElement("h4");
-          console.log("ioutput= " + ioutput[i]);
-          li1.textContent = ioutput[i];
-          console.log("Li1 = " + li1.textContent);
-          initialsEl.appendChild(li1);
-          var li2 = document.createElement("h4");
-          console.log("qoutput= " + qoutput[i]);
-          li2.textContent = qoutput[i];
-          console.log("Li2 = " + li2.textContent);
-          answeredEl.appendChild(li2);
-          var li3 = document.createElement("h4");
-          console.log("soutput= " + soutput[i]);
-          li3.textContent = soutput[i];
-          console.log("Li3 = " + li3.textContent);
-          resultsEl.appendChild(li3);
-      }
+        localStorage.setItem("initials", JSON.stringify(ioutput));
+        localStorage.setItem("answered", JSON.stringify(qoutput));
+        localStorage.setItem("totalscore", JSON.stringify(soutput));
+        restorescores();
+
     }
       
   }
@@ -135,3 +118,38 @@ beginningbutton.addEventListener("click", function(event) {
     console.log("Here we index " + index)
     
     }})
+
+    function restorescores() {
+      resultsEl.innerHTML = "";
+      answeredEl.innerHTML = "";
+      initialsEl.innerHTML = "";
+      var storedinitials = JSON.parse(localStorage.getItem("initials"));
+      if (storedinitials !== null) {            
+      var storedanswered = JSON.parse(localStorage.getItem("answered"));
+      var storedtotal = JSON.parse(localStorage.getItem("totalscore"));
+      ioutput = storedinitials;
+      qoutput = storedanswered;
+      soutput = storedtotal;
+      console.log(storedanswered)
+      console.log(storedinitials)
+      console.log(storedtotal)
+    }  
+      for (var i = 0; i < ioutput.length; i++) {
+        var li1 = document.createElement("h4");
+        console.log("ioutput= " + ioutput[i]);
+        li1.textContent = ioutput[i];
+        console.log("Li1 = " + li1.textContent);
+        initialsEl.appendChild(li1);
+        var li2 = document.createElement("h4");
+        console.log("qoutput= " + qoutput[i]);
+        li2.textContent = qoutput[i];
+        console.log("Li2 = " + li2.textContent);
+        answeredEl.appendChild(li2);
+        var li3 = document.createElement("h4");
+        console.log("soutput= " + soutput[i]);
+        li3.textContent = soutput[i];
+        console.log("Li3 = " + li3.textContent);
+        resultsEl.appendChild(li3);
+    }
+  }
+  restorescores();
