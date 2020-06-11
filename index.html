@@ -12,10 +12,10 @@
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link active" id="clearhighscores">CLEAR HIGHSCORES</a>
+                    <a class="nav-link" href="#">TBD</a>
         </div>
         <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="index.html">The Great Javascript Quiz</a>
+            <a class="navbar-brand mx-auto" href="index.html">Javascript Quiz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,10 +23,10 @@
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active timeleft" >Time Left</a>
+                    <a class="nav-link active" >Time Left</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active timeleft" id="yourscore" >0</a>
+                    <a class="nav-link" id="yourscore" href="highscore.html">0</a>
                 </li>
             </ul>
         </div>
@@ -34,11 +34,12 @@
 <div class="container scoreoutput">
     <div class="row">
     <div class="col-lg-12">
+<h2>The Great Javascript Quiz</h2>
 <section class="centre">
     <button type="button" class="btn btn-primary btn-sm" id= "beginning">Start Quiz</button>
     <br>
     <div class="box"></div>
-    <p id="textdisplay"></p>
+    <h5 id="textdisplay"> </h5>
     <br>
     <div id="buttonshere"></div>
 </div>
@@ -47,20 +48,18 @@
 <br>
 
     <div class="row yourhighscores">
-      <div class="col-lg-3">
+      <div class="col-lg-4">
     <h3> Initials</h3>
     <div id="yourinitials"></div>
         </div>
-      <div class="col-lg-3 youranswered">
-      <h3> Answered Qs</h3>
+      <div class="col-lg-4 youranswered">
+      <h3> Questions Answered</h3>
       <div id="youranswered"></div>
         </div>
-      <div class="col-lg-3 yourresults">
+      <div class="col-lg-4 yourresults">
       <h3> Score</h3>
       <div id="yourresults"></div>
         </div>
-        <div class="col-lg-3 classwidth">
-           </div>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

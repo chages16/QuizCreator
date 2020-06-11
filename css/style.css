@@ -6,7 +6,7 @@ body {
 
 h2 {
     text-align: center;
-    font-weight: 400px;
+    font: weight 400;
     font-style: italic;
     font-family: cursive;
     color: red;
@@ -23,12 +23,12 @@ h2 {
     text-align: center;
     border-style: double;
     background-color:lemonchiffon;
-    margin-left: 65px;
-    margin-right: 65px;
+    margin-left: 75px;
+    margin-right: 75px;
     border-radius: 20px;
     border-color: black;
     border-width: 5px;
-    height: 360px
+    height: 400px
     }
   
 #result {
@@ -44,11 +44,11 @@ h2 {
 }
 
 #textdisplay {
-    height: 120px;
+    height: 150px;
 }
 
 li {
-    margin: 7px;
+    margin: 10px;
 }
 /* .navbar-collapse {
 text-align: right;
@@ -61,81 +61,8 @@ text-align: right;
 
 h3 {
     text-align: center;
-    font-size: x-large;
 }
 
 .yourhighscores {
     text-align: center;
 }
-
-
-.timeleft {
-    font-size: x-large;
-}
-
-#clearhighscores {
-    font-size: x-large;
-}
-
-#clearhighscores:hover {
-    color: brown;
-}
-
-.col-lg-3 {
-    width: 200px
-
-}
-
-@media screen and (max-width: 768px) {
-    body {
-      background-color: #333;
-    }
-
-    h3 {
-        color: white;
-        font-size: smaller;
-    }
-
-    h5 {
-        color: white;
-        font-size: x-small;
-    }
-
-    .navbar{
-        height: 50px
-    }
-
-    .timeleft{
-        font-size: x-small;
-    }
-
-    #clearhighscores {
-        font-size: xx-small;
-    }
-
-    #clearhighscores:hover {
-        color: yellow;
-    }
- 
-    .centre {
-        text-align: center;
-        border-style: double;
-        background-color:lemonchiffon;
-        margin-left: 70px;
-        margin-right: 10px;
-        border-radius: 10px;
-        border-color: black;
-        border-width: 2px;
-        height: 360px
-        }
-
-        p {
-            font-size: xx-small;
-        }
-
-        .col-lg-3 {
-            width: 110px
-        
-        }
-        
-    }
