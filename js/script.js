@@ -31,7 +31,7 @@ beginningbutton.addEventListener("click", function(event) {
     console.log(event);
     document.getElementById("beginning").style="display: none;";
     alert("hello");
-    question.textContent= questiontext[round];
+    question.innerHTML= questiontext[round];
     setTime();
     
     for(i=0;i<4;i++) {
