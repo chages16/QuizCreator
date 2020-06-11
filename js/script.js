@@ -12,12 +12,12 @@ var clearEl = document.getElementById("clearhighscores");
 
 var answer = ["a","b","c","d"];
 var correctanswer = ["a","d","b","a","d","c"]
-var questiontext = ['Question 1 Answer is <br> A!',
-"Question 2 Answer is D!",
-"Question 3 Answer is B!",
-"Question 4 Answer is A!",
-"Question 5 Answer is D!",
-"Question 6 Answer is C!"
+var questiontext = ['What best decribes Javascript? <br><br> A) A programming language that supports event-driven, functional, and imperative programming styles. <br> B) Used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.<br>C) The standard markup language for Web pages<br>D)a structured set of data held in a computer, especially one that is accessible in various ways.',
+"What following command will send information to the broswer console? <br><br> A) event.console <br> B) log.event <br>C) event.log <br>D)console.log",
+'Which of these is an object? <br><br> A) var car = [type,car,model]<br> B) var car = {type:"Fiat", model:"500", color:"white"}; <br>C) var car = objector(fiat,model,white)<br>D) var car = function white(event {)',
+'Which of these is the best for finding the element with the id type-"beginning"? <br><br> A) document.querySelector("#beginning");<br> B) document.querySelector(".beginning"); <br>C) document.getElementById("#beginning");<br>D) document.getElementById("id = beginning")',
+'What would "array[4]" return for "var array = [1,2,3,4,5,6]"? <br><br> A) -1 <br>B) 4 <br>C) undefined;<br>D) 5',
+'If var a ="2" and var b="1" what would b + a equal? <br><br> A) 3 <br>B) "21" <br>C) "12"<br>D) undefined'
 ];
 var round = 0
 var ioutput = [];
@@ -31,7 +31,7 @@ beginningbutton.addEventListener("click", function(event) {
     console.log(event);
     document.getElementById("beginning").style="display: none;";
     alert("hello");
-    question.textContent= questiontext[round];
+    question.innerHTML= questiontext[round];
     setTime();
     
     for(i=0;i<4;i++) {
@@ -114,7 +114,7 @@ beginningbutton.addEventListener("click", function(event) {
     if (index == correctanswer[round]){
     // alert("Correct");
     round++;
-    question.textContent= questiontext[round];
+    question.innerHTML= questiontext[round];
 
     }
     else {
