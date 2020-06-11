@@ -1,7 +1,5 @@
 body {
-    background-color: rgb(185, 236, 230)  ;
-    
-
+    background-color: rgb(185, 236, 230);
 }
 
 h2 {
@@ -13,12 +11,6 @@ h2 {
     font-size: xx-large;
 }
 
-/* .container {
-    height: 200px;
-    position: relative;
-    border: 3px solid green;
-} */
-  
 .centre {
     text-align: center;
     border-style: double;
@@ -29,7 +21,7 @@ h2 {
     border-color: black;
     border-width: 5px;
     height: 380px
-    }
+}
   
 #result {
     font-style: italic;
@@ -50,9 +42,6 @@ h2 {
 li {
     margin: 7px;
 }
-/* .navbar-collapse {
-text-align: right;
-} */
 
 .yourhighscores {
     align-content: center;
@@ -84,9 +73,7 @@ h3 {
 .invisrow {
     display:none;
 }
-
-
-
+/* Media for screen less than 1000px as this is where the header no longer fits correctly at the top of the page*/
 
 @media screen and (max-width: 1000px) {
     body {
@@ -109,13 +96,9 @@ h3 {
     }
 
     .navbar{
-        height: 50px
+        height: 50px;
     }
 
-/*     .timeleft{
-        display: none;
-    }
- */
     #clearhighscores {
         font-size: xx-small;
         display: none;

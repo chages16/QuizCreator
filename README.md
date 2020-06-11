@@ -1,6 +1,6 @@
 # Homework Week 4
 
-This project is a working password generator that selects a psuedo-random password based on the input criteria of the user.
+This project is a working short quiz that uses Javascript to create multiple choice questions for the user, as well as store high scores input.
 
 ## User Story
 
@@ -26,37 +26,51 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
-The following animation demonstrates the application functionality:
-
 ## Steps
 
-Using Javascript and the skills from class, I used arrays, If functions and loops, and Math.Random formulas to generate the characters required.
+Using Javascript and the skills from class, I used arrays, If functions and loops, and APIs to create the game.
 
-Using confirm prompts, I allowed the user to select what customisation they can add to their password. The basic password are random lower case letters. Based on the criteria the user selects, each character has a certian % chance of becoming a symbol/ capital or number.
+Using bootstrap and some jquery for the header, I tried to create a template that would fit on 1 page. Using media query I made some adjustments so that it would be usable on most media platforms.
 
-At the end, if the user wanted a phrase, I utilised a replace function in order to replace the existing characters of the password with the phrase input by the user. I used the phrase length and the password length to ensure that the phrase would always fit within the password.
+The first steps were creating functions that would allow multiple choice buttons a-d appear. Usine a data-index field and an answers array, I was able to create a simple function that looked up the answer to the question based on what question the user was up to. Once the questions were all answers, or once the time was up, the timerinterval would end and the user would be prompted to enter in their intitials. The function then stores the initials, questions answered, and the total score (questions answered plus time left), as three different variables within the browser local storage.
 
-Made some adjustments and used checks and loops so that all the paramters listed by the user would appear in the password.
+In order to generate it back within the html, I created a for loop that creates an array which lists the index number of the scores from highest to lowest. Another for loop then selects the information of all 3 stored variables and inserts them into a table in that order, allowing top scores to appear at the top of the screen.
 
-Also created a quick check button for users who don't need a custom password.
+Once this was completed, I generated the questions within an array and used Javascript html elements to to place the text in the main section of the screen.
+
+A reset function was created so that all high scores can be deleted, as well as a function that runs whenever the page is loaded that checks for any existing local storage.
+
+Ran the functions a few times to ensure it met all acceptance criteria.
+
+## Issues/ Bugs/ Next Steps
+
+Currently while the css has been updated so that everything is viewable on mobile/ smaller displays, I haven't been able to get it to run on Chrome for mobile. It works and meets all the acceptance criteria on the Internet browser on my phone. I have not been able to fix this yet.
+
+Would like to simplify the JS code with Jquery. The document does use JQuery for some of the Bootstrap elements, but I don't use it within my script.
+
+I found issues using objects to store the initials, questions answered and scores of the users. I'd like to update the code in the future to use objects rather than arrays so that I can reduce the variables required and perhaps simplify the function that sorts the data by highscore.
+
+When I have more time, I'd like to improve the CSS and text to make it look a bit more appealing!
 
 ## Deployment
 
-The repository can be found here: https://github.com/chages16/PasswordGenerator
+The repository can be found here: https://github.com/chages16/QuizCreator
 
-The website, can be found here: https://chages16.github.io/PasswordGenerator/
+The website, can be found here: https://chages16.github.io/QuizCreator/
 
 ## Built With
 
 * [Visual Studio Code](https://code.visualstudio.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [J Query](https://jquery.com/)
 
 ## Versioning
 
-1.1.0 
+1.0.0 
 
 ## Authors
 
-* **Chris Hage** - *Password Generator* - [Chages16](https://github.com/chages16/)
+* **Chris Hage** - *Quiz Creator* - [Chages16](https://github.com/chages16/)
 
 ## Acknowledgments
 
