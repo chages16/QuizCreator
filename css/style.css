@@ -155,14 +155,36 @@ h3 {
         }
 
         .centre {
-            height: 430px
+            height: 460px
         }
 
         #textdisplay {
-            height: 190px;
+            height: 200px;
         }
         
         .col-lg-6 {
             width: 150px;
+        }
+    }
+
+    @media screen and (max-width: 351px) {
+
+        .col-lg-4 {
+            width: 70px;
+        
+        }
+
+        .centre {
+            height: 460px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        #textdisplay {
+            height: 220px;
+        }
+        
+        h4 {
+            font-size: xx-small;
         }
     }
