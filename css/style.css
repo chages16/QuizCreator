@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(185, 236, 230);
+    background-color: rgba(66, 119, 189, 0.719);
 }
 
 h2 {
@@ -15,11 +15,11 @@ h2 {
     text-align: center;
     border-style: double;
     background-color:lemonchiffon;
-    margin-left: 65px;
-    margin-right: 65px;
-    border-radius: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+    border-radius: 30px;
     border-color: black;
-    border-width: 5px;
+    border-width: 6px;
     height: 380px
 }
   
@@ -176,8 +176,8 @@ h3 {
 
         .centre {
             height: 460px;
-            margin-left: 5px;
-            margin-right: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
         }
 
         #textdisplay {
